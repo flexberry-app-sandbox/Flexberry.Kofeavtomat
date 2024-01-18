@@ -37,7 +37,7 @@ namespace IIS.Kofeavtomat
             "Заказ.Клиент.Номер as \'Номер клиента\'",
             "Заказ.Оплата as \'Оплата\'",
             "Заказ.Оплата.ТипОплаты as \'Тип оплаты\'"})]
-    [MasterViewDefineAttribute("СоставЗаказаE", "Заказ", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Id")]
+    [MasterViewDefineAttribute("СоставЗаказаE", "Заказ", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номер")]
     public class СоставЗаказа : ICSSoft.STORMNET.DataObject
     {
         

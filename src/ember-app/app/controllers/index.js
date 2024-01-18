@@ -22,55 +22,55 @@ export default Controller.extend({
             link: 'i-i-s-kofeavtomat-заказ-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-заказ-l.title'),
-            icon: 'file',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-клиент-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-клиент-l.title'),
-            icon: 'archive',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-обслуживание-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-обслуживание-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-обслуживание-l.title'),
-            icon: 'tags',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-адрес-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-адрес-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-адрес-l.title'),
-            icon: 'briefcase',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-кофе-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-кофе-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-кофе-l.title'),
-            icon: 'tags',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-этаж-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-этаж-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-этаж-l.title'),
-            icon: 'file',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-кофе-машина-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-кофе-машина-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-кофе-машина-l.title'),
-            icon: 'building',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-оплата-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-оплата-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-оплата-l.title'),
-            icon: 'edit',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-kofeavtomat-здание-l',
             caption: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-здание-l.caption'),
             title: i18n.t('forms.application.sitemap.kofeavtomat.i-i-s-kofeavtomat-здание-l.title'),
-            icon: 'building',
+            icon: 'address card',
             children: null
           }]
         }
