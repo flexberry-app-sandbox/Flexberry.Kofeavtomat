@@ -5,7 +5,7 @@
 
 CREATE TABLE Заказ (
  primaryKey UUID NOT NULL,
- Id INT NULL,
+ Номер INT NULL,
  Оплата UUID NOT NULL,
  Клиент UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -13,7 +13,7 @@ CREATE TABLE Заказ (
 
 CREATE TABLE Клиент (
  primaryKey UUID NOT NULL,
- id INT NULL,
+ Номер INT NULL,
  Телефон INT NULL,
  PRIMARY KEY (primaryKey));
 
@@ -69,7 +69,7 @@ CREATE TABLE Этаж (
 
 CREATE TABLE КофеМашина (
  primaryKey UUID NOT NULL,
- id INT NULL,
+ Номер INT NULL,
  Состояние VARCHAR(10) NULL,
  Этаж UUID NOT NULL,
  Обслуживание UUID NOT NULL,
@@ -103,7 +103,7 @@ CREATE TABLE СоставЗаказа (
  primaryKey UUID NOT NULL,
  Сумма DOUBLE PRECISION NULL,
  Заказ UUID NOT NULL,
- КофеМашина UUID NOT NULL,
+ Входит UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -250,8 +250,8 @@ CREATE INDEX Indexf23e5edc7a937df9da020c64a707e245bece7baa on Допы (Кофе
  ALTER TABLE СоставЗаказа ADD CONSTRAINT FK725fb485be2a96cedeb5fe845f87e1aec258553d FOREIGN KEY (Заказ) REFERENCES Заказ; 
 CREATE INDEX Index725fb485be2a96cedeb5fe845f87e1aec258553d on СоставЗаказа (Заказ); 
 
- ALTER TABLE СоставЗаказа ADD CONSTRAINT FKd0b9daa2b34f1398ab3d9250061e76764a763692 FOREIGN KEY (КофеМашина) REFERENCES КофеМашина; 
-CREATE INDEX Indexd0b9daa2b34f1398ab3d9250061e76764a763692 on СоставЗаказа (КофеМашина); 
+ ALTER TABLE СоставЗаказа ADD CONSTRAINT FK911472cfd9158a2acf751d3b643d459a15575905 FOREIGN KEY (Входит) REFERENCES КофеМашина; 
+CREATE INDEX Index911472cfd9158a2acf751d3b643d459a15575905 on СоставЗаказа (Входит); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

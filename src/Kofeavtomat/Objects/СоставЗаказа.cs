@@ -32,12 +32,11 @@ namespace IIS.Kofeavtomat
     [View("СоставЗаказаE", new string[] {
             "Сумма as \'Сумма\'",
             "Заказ as \'Заказ\'",
-            "Заказ.Id as \'Id\'",
+            "Заказ.Номер as \'Номер заказа\'",
             "Заказ.Клиент as \'Клиент\'",
-            "Заказ.Клиент.id as \'ID клиента\'",
+            "Заказ.Клиент.Номер as \'Номер клиента\'",
             "Заказ.Оплата as \'Оплата\'",
-            "Заказ.Оплата.ТипОплаты as \'Тип оплаты\'"}, Hidden=new string[] {
-            "Заказ.Id"})]
+            "Заказ.Оплата.ТипОплаты as \'Тип оплаты\'"})]
     [MasterViewDefineAttribute("СоставЗаказаE", "Заказ", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Id")]
     public class СоставЗаказа : ICSSoft.STORMNET.DataObject
     {
@@ -46,7 +45,7 @@ namespace IIS.Kofeavtomat
         
         private IIS.Kofeavtomat.Заказ fЗаказ;
         
-        private IIS.Kofeavtomat.КофеМашина fКофеМашина;
+        private IIS.Kofeavtomat.КофеМашина fВходит;
         
         // *** Start programmer edit section *** (СоставЗаказа CustomMembers)
 
@@ -121,35 +120,35 @@ namespace IIS.Kofeavtomat
         /// <summary>
         /// мастеровая ссылка на шапку IIS.Kofeavtomat.КофеМашина.
         /// </summary>
-        // *** Start programmer edit section *** (СоставЗаказа.КофеМашина CustomAttributes)
+        // *** Start programmer edit section *** (СоставЗаказа.Входит CustomAttributes)
 
-        // *** End programmer edit section *** (СоставЗаказа.КофеМашина CustomAttributes)
+        // *** End programmer edit section *** (СоставЗаказа.Входит CustomAttributes)
         [Agregator()]
         [NotNull()]
         [PropertyStorage(new string[] {
-                "КофеМашина"})]
-        public virtual IIS.Kofeavtomat.КофеМашина КофеМашина
+                "Входит"})]
+        public virtual IIS.Kofeavtomat.КофеМашина Входит
         {
             get
             {
-                // *** Start programmer edit section *** (СоставЗаказа.КофеМашина Get start)
+                // *** Start programmer edit section *** (СоставЗаказа.Входит Get start)
 
-                // *** End programmer edit section *** (СоставЗаказа.КофеМашина Get start)
-                IIS.Kofeavtomat.КофеМашина result = this.fКофеМашина;
-                // *** Start programmer edit section *** (СоставЗаказа.КофеМашина Get end)
+                // *** End programmer edit section *** (СоставЗаказа.Входит Get start)
+                IIS.Kofeavtomat.КофеМашина result = this.fВходит;
+                // *** Start programmer edit section *** (СоставЗаказа.Входит Get end)
 
-                // *** End programmer edit section *** (СоставЗаказа.КофеМашина Get end)
+                // *** End programmer edit section *** (СоставЗаказа.Входит Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (СоставЗаказа.КофеМашина Set start)
+                // *** Start programmer edit section *** (СоставЗаказа.Входит Set start)
 
-                // *** End programmer edit section *** (СоставЗаказа.КофеМашина Set start)
-                this.fКофеМашина = value;
-                // *** Start programmer edit section *** (СоставЗаказа.КофеМашина Set end)
+                // *** End programmer edit section *** (СоставЗаказа.Входит Set start)
+                this.fВходит = value;
+                // *** Start programmer edit section *** (СоставЗаказа.Входит Set end)
 
-                // *** End programmer edit section *** (СоставЗаказа.КофеМашина Set end)
+                // *** End programmer edit section *** (СоставЗаказа.Входит Set end)
             }
         }
         

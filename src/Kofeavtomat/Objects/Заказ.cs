@@ -29,25 +29,24 @@ namespace IIS.Kofeavtomat
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ЗаказE", new string[] {
-            "Id as \'Id\'",
+            "Номер as \'ID\'",
             "Оплата as \'Оплата\'",
             "Оплата.ТипОплаты as \'Тип оплаты\'",
             "Клиент as \'Клиент\'",
-            "Клиент.id as \'Id\'"}, Hidden=new string[] {
-            "Оплата.ТипОплаты",
-            "Клиент.id"})]
+            "Клиент.Номер as \'ID Клиента\'"}, Hidden=new string[] {
+            "Оплата.ТипОплаты"})]
     [AssociatedDetailViewAttribute("ЗаказE", "Состав", "СоставE", true, "", "Состав", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ЗаказE", "Оплата", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ТипОплаты")]
     [MasterViewDefineAttribute("ЗаказE", "Клиент", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "id")]
     [View("ЗаказL", new string[] {
-            "Id as \'Id\'",
+            "Номер as \'ID\'",
             "Оплата.ТипОплаты as \'Тип оплаты\'",
-            "Клиент.id as \'Id\'"})]
+            "Клиент.Номер as \'ID клиента\'"})]
     public class Заказ : ICSSoft.STORMNET.DataObject
     {
         
-        private int fId;
+        private int fНомер;
         
         private IIS.Kofeavtomat.Оплата fОплата;
         
@@ -61,33 +60,33 @@ namespace IIS.Kofeavtomat
 
         
         /// <summary>
-        /// Id.
+        /// Номер.
         /// </summary>
-        // *** Start programmer edit section *** (Заказ.Id CustomAttributes)
+        // *** Start programmer edit section *** (Заказ.Номер CustomAttributes)
 
-        // *** End programmer edit section *** (Заказ.Id CustomAttributes)
-        public virtual int Id
+        // *** End programmer edit section *** (Заказ.Номер CustomAttributes)
+        public virtual int Номер
         {
             get
             {
-                // *** Start programmer edit section *** (Заказ.Id Get start)
+                // *** Start programmer edit section *** (Заказ.Номер Get start)
 
-                // *** End programmer edit section *** (Заказ.Id Get start)
-                int result = this.fId;
-                // *** Start programmer edit section *** (Заказ.Id Get end)
+                // *** End programmer edit section *** (Заказ.Номер Get start)
+                int result = this.fНомер;
+                // *** Start programmer edit section *** (Заказ.Номер Get end)
 
-                // *** End programmer edit section *** (Заказ.Id Get end)
+                // *** End programmer edit section *** (Заказ.Номер Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Заказ.Id Set start)
+                // *** Start programmer edit section *** (Заказ.Номер Set start)
 
-                // *** End programmer edit section *** (Заказ.Id Set start)
-                this.fId = value;
-                // *** Start programmer edit section *** (Заказ.Id Set end)
+                // *** End programmer edit section *** (Заказ.Номер Set start)
+                this.fНомер = value;
+                // *** Start programmer edit section *** (Заказ.Номер Set end)
 
-                // *** End programmer edit section *** (Заказ.Id Set end)
+                // *** End programmer edit section *** (Заказ.Номер Set end)
             }
         }
         

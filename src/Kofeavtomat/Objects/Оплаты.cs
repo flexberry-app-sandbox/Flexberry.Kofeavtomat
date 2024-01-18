@@ -29,17 +29,17 @@ namespace IIS.Kofeavtomat
     public enum Оплаты
     {
         
-        // *** Start programmer edit section *** (Оплаты.Крипта CustomAttributes)
-
-        // *** End programmer edit section *** (Оплаты.Крипта CustomAttributes)
-        [Caption("Крипта")]
-        Крипта,
-        
         // *** Start programmer edit section *** (Оплаты.Безнал CustomAttributes)
 
         // *** End programmer edit section *** (Оплаты.Безнал CustomAttributes)
         [Caption("Безнал")]
         Безнал,
+        
+        // *** Start programmer edit section *** (Оплаты.Крипта CustomAttributes)
+
+        // *** End programmer edit section *** (Оплаты.Крипта CustomAttributes)
+        [Caption("Крипта")]
+        Крипта,
         
         // *** Start programmer edit section *** (Оплаты.Нал CustomAttributes)
 

@@ -30,7 +30,7 @@ namespace IIS.Kofeavtomat
     [Caption("Кофе машина")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("КофеМашинаE", new string[] {
-            "id as \'Id\'",
+            "Номер as \'ID\'",
             "Состояние as \'Состояние\'",
             "Этаж.Здание.Адрес.Город as \'Город\'",
             "Этаж.Здание as \'Здание\'",
@@ -49,7 +49,7 @@ namespace IIS.Kofeavtomat
     [MasterViewDefineAttribute("КофеМашинаE", "Этаж", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Этаж")]
     [MasterViewDefineAttribute("КофеМашинаE", "Обслуживание", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     [View("КофеМашинаL", new string[] {
-            "id as \'Id\'",
+            "Номер as \'ID\'",
             "Состояние as \'Состояние\'",
             "Этаж.Здание.Адрес.Город as \'Город\'",
             "Этаж.Здание.Адреса as \'Адрес\'",
@@ -59,7 +59,7 @@ namespace IIS.Kofeavtomat
     public class КофеМашина : ICSSoft.STORMNET.DataObject
     {
         
-        private int fid;
+        private int fНомер;
         
         private IIS.Kofeavtomat.Состояния fСостояние;
         
@@ -75,33 +75,33 @@ namespace IIS.Kofeavtomat
 
         
         /// <summary>
-        /// id.
+        /// Номер.
         /// </summary>
-        // *** Start programmer edit section *** (КофеМашина.id CustomAttributes)
+        // *** Start programmer edit section *** (КофеМашина.Номер CustomAttributes)
 
-        // *** End programmer edit section *** (КофеМашина.id CustomAttributes)
-        public virtual int id
+        // *** End programmer edit section *** (КофеМашина.Номер CustomAttributes)
+        public virtual int Номер
         {
             get
             {
-                // *** Start programmer edit section *** (КофеМашина.id Get start)
+                // *** Start programmer edit section *** (КофеМашина.Номер Get start)
 
-                // *** End programmer edit section *** (КофеМашина.id Get start)
-                int result = this.fid;
-                // *** Start programmer edit section *** (КофеМашина.id Get end)
+                // *** End programmer edit section *** (КофеМашина.Номер Get start)
+                int result = this.fНомер;
+                // *** Start programmer edit section *** (КофеМашина.Номер Get end)
 
-                // *** End programmer edit section *** (КофеМашина.id Get end)
+                // *** End programmer edit section *** (КофеМашина.Номер Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (КофеМашина.id Set start)
+                // *** Start programmer edit section *** (КофеМашина.Номер Set start)
 
-                // *** End programmer edit section *** (КофеМашина.id Set start)
-                this.fid = value;
-                // *** Start programmer edit section *** (КофеМашина.id Set end)
+                // *** End programmer edit section *** (КофеМашина.Номер Set start)
+                this.fНомер = value;
+                // *** Start programmer edit section *** (КофеМашина.Номер Set end)
 
-                // *** End programmer edit section *** (КофеМашина.id Set end)
+                // *** End programmer edit section *** (КофеМашина.Номер Set end)
             }
         }
         

@@ -1,28 +1,37 @@
 export default {
   projections: {
     КлиентE: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       телефон: {
         __caption__: 'Телефон'
+      },
+      id: {
+        __caption__: 'Id'
       }
     },
     КлиентL: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       телефон: {
         __caption__: 'Телефон'
+      },
+      id: {
+        __caption__: 'Id'
       }
     }
   },
   validations: {
-    id: {
-      __caption__: 'Id'
+    номер: {
+      __caption__: 'ID'
     },
     телефон: {
       __caption__: 'Телефон'
+    },
+    id: {
+      __caption__: 'Id'
     }
   }
 };

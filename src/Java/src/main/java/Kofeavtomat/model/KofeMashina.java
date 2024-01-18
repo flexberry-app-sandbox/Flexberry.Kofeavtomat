@@ -23,8 +23,8 @@ public class KofeMashina {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "id")
-    private Integer id;
+    @Column(name = "Номер")
+    private Integer номер;
 
     @Column(name = "Состояние")
     private String состояние;
@@ -49,7 +49,7 @@ public class KofeMashina {
     @JoinColumn(name = "Obsluzhivanie", insertable = false, updatable = false)
     private Obsluzhivanie obsluzhivanie;
 
-    @OneToMany(mappedBy = "kofemashina", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "vxodit", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<SostavZakaza> sostavzakazas;
 
 
@@ -65,12 +65,12 @@ public class KofeMashina {
         return primarykey;
     }
 
-    public Integer getid() {
-      return id;
+    public Integer getНомер() {
+      return номер;
     }
 
-    public void setid(Integer id) {
-      this.id = id;
+    public void setНомер(Integer номер) {
+      this.номер = номер;
     }
 
     public String getСостояние() {

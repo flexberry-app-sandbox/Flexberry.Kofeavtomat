@@ -1,5 +1,6 @@
 export default {
   caption: 'Кофе машина',
-  'id-caption': 'Id',
-  'состояние-caption': 'Состояние'
+  'номер-caption': 'ID',
+  'состояние-caption': 'Состояние',
+  'id-caption': 'Id'
 };

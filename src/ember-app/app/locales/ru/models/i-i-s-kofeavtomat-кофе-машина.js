@@ -1,16 +1,19 @@
 export default {
   projections: {
     КофеМашинаE: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       состояние: {
         __caption__: 'Состояние'
+      },
+      id: {
+        __caption__: 'Id'
       }
     },
     КофеМашинаL: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       состояние: {
         __caption__: 'Состояние'
@@ -41,12 +44,15 @@ export default {
         наименование: {
           __caption__: 'Наименование'
         }
+      },
+      id: {
+        __caption__: 'Id'
       }
     }
   },
   validations: {
-    id: {
-      __caption__: 'Id'
+    номер: {
+      __caption__: 'ID'
     },
     состояние: {
       __caption__: 'Состояние'
@@ -59,6 +65,9 @@ export default {
     },
     составЗаказа: {
       __caption__: 'составЗаказа'
+    },
+    id: {
+      __caption__: 'Id'
     }
   }
 };

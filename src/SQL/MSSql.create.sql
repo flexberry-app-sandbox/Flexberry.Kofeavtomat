@@ -6,7 +6,7 @@ CREATE TABLE [Заказ] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [Id] INT  NULL,
+	 [Номер] INT  NULL,
 
 	 [Клиент] UNIQUEIDENTIFIER  NOT NULL,
 
@@ -19,7 +19,7 @@ CREATE TABLE [Клиент] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [id] INT  NULL,
+	 [Номер] INT  NULL,
 
 	 [Телефон] INT  NULL,
 
@@ -107,7 +107,7 @@ CREATE TABLE [КофеМашина] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [id] INT  NULL,
+	 [Номер] INT  NULL,
 
 	 [Состояние] VARCHAR(10)  NULL,
 
@@ -163,7 +163,7 @@ CREATE TABLE [СоставЗаказа] (
 
 	 [Заказ] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [КофеМашина] UNIQUEIDENTIFIER  NOT NULL,
+	 [Входит] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

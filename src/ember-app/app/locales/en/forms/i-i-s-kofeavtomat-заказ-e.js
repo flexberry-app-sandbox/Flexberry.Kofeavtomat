@@ -1,7 +1,9 @@
 export default {
   caption: 'Заказ',
-  'id-caption': 'Id',
+  'номер-caption': 'ID',
+  'клиент.номер-caption': 'ID Клиента',
   'оплата-caption': 'Оплата',
   'клиент-caption': 'Клиент',
-  'состав-caption': 'Состав'
+  'состав-caption': 'Состав',
+  'id-caption': 'Id'
 };

@@ -5,16 +5,16 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
-  id: DS.attr('number'),
+  номер: DS.attr('number'),
   состояние: DS.attr('i-i-s-kofeavtomat-состояния'),
   обслуживание: DS.belongsTo('i-i-s-kofeavtomat-обслуживание', { inverse: null, async: false }),
   этаж: DS.belongsTo('i-i-s-kofeavtomat-этаж', { inverse: null, async: false }),
-  составЗаказа: DS.hasMany('i-i-s-kofeavtomat-состав-заказа', { inverse: 'кофеМашина', async: false })
+  составЗаказа: DS.hasMany('i-i-s-kofeavtomat-состав-заказа', { inverse: 'входит', async: false })
 });
 
 export let ValidationRules = {
-  id: {
-    descriptionKey: 'models.i-i-s-kofeavtomat-кофе-машина.validations.id.__caption__',
+  номер: {
+    descriptionKey: 'models.i-i-s-kofeavtomat-кофе-машина.validations.номер.__caption__',
     validators: [
       validator('ds-error'),
       validator('number', { allowString: true, allowBlank: true, integer: true }),
@@ -51,12 +51,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('КофеМашинаE', 'i-i-s-kofeavtomat-кофе-машина', {
-    id: attr('Id', { index: 0 }),
+    номер: attr('ID', { index: 0 }),
     состояние: attr('Состояние', { index: 1 })
   });
 
   modelClass.defineProjection('КофеМашинаL', 'i-i-s-kofeavtomat-кофе-машина', {
-    id: attr('Id', { index: 0 }),
+    номер: attr('ID', { index: 0 }),
     состояние: attr('Состояние', { index: 1 }),
     этаж: belongsTo('i-i-s-kofeavtomat-этаж', 'Город', {
       здание: belongsTo('i-i-s-kofeavtomat-здание', '', {

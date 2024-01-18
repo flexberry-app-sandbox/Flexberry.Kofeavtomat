@@ -7,7 +7,7 @@ CREATE TABLE "Заказ"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Id" NUMBER(10) NULL,
+	"Номер" NUMBER(10) NULL,
 
 	"Оплата" RAW(16) NOT NULL,
 
@@ -22,7 +22,7 @@ CREATE TABLE "Клиент"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"id" NUMBER(10) NULL,
+	"Номер" NUMBER(10) NULL,
 
 	"Телефон" NUMBER(10) NULL,
 
@@ -126,7 +126,7 @@ CREATE TABLE "КофеМашина"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"id" NUMBER(10) NULL,
+	"Номер" NUMBER(10) NULL,
 
 	"Состояние" NVARCHAR2(10) NULL,
 
@@ -190,7 +190,7 @@ CREATE TABLE "СоставЗаказа"
 
 	"Заказ" RAW(16) NOT NULL,
 
-	"КофеМашина" RAW(16) NOT NULL,
+	"Входит" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -460,9 +460,9 @@ ALTER TABLE "СоставЗаказа"
 CREATE INDEX "СоставЗаказа__8782" on "СоставЗаказа" ("Заказ");
 
 ALTER TABLE "СоставЗаказа"
-	ADD CONSTRAINT "СоставЗаказа_F_815" FOREIGN KEY ("КофеМашина") REFERENCES "КофеМашина" ("primaryKey");
+	ADD CONSTRAINT "СоставЗаказа_F_815" FOREIGN KEY ("Входит") REFERENCES "КофеМашина" ("primaryKey");
 
-CREATE INDEX "СоставЗаказа__3658" on "СоставЗаказа" ("КофеМашина");
+CREATE INDEX "СоставЗаказа__4976" on "СоставЗаказа" ("Входит");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

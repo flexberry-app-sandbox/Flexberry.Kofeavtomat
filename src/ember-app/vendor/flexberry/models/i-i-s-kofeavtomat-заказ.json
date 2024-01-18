@@ -7,7 +7,7 @@
   "parentClassName": null,
   "attrs": [
     {
-      "name": "id",
+      "name": "номер",
       "type": "number",
       "flexberryType": "int",
       "notNull": false,
@@ -45,8 +45,8 @@
       "modelName": "i-i-s-kofeavtomat-заказ",
       "attrs": [
         {
-          "name": "id",
-          "caption": "Id",
+          "name": "номер",
+          "caption": "ID",
           "hidden": false,
           "index": 0
         }
@@ -81,9 +81,9 @@
           "hidden": false,
           "attrs": [
             {
-              "name": "id",
-              "caption": "Id",
-              "hidden": true,
+              "name": "номер",
+              "caption": "ID Клиента",
+              "hidden": false,
               "index": 4
             }
           ],
@@ -110,8 +110,8 @@
       "modelName": "i-i-s-kofeavtomat-заказ",
       "attrs": [
         {
-          "name": "id",
-          "caption": "Id",
+          "name": "номер",
+          "caption": "ID",
           "hidden": false,
           "index": 0
         }
@@ -146,15 +146,15 @@
           "hidden": false,
           "attrs": [
             {
-              "name": "id",
-              "caption": "Id",
+              "name": "номер",
+              "caption": "ID клиента",
               "hidden": false,
               "index": 2
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "Id",
+          "caption": "ID клиента",
           "name": "клиент",
           "relatedTo": "i-i-s-kofeavtomat-клиент",
           "inverse": null

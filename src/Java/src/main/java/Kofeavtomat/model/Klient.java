@@ -21,8 +21,8 @@ public class Klient {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "id")
-    private Integer id;
+    @Column(name = "Номер")
+    private Integer номер;
 
     @Column(name = "Телефон")
     private Integer телефон;
@@ -40,12 +40,12 @@ public class Klient {
         return primarykey;
     }
 
-    public Integer getid() {
-      return id;
+    public Integer getНомер() {
+      return номер;
     }
 
-    public void setid(Integer id) {
-      this.id = id;
+    public void setНомер(Integer номер) {
+      this.номер = номер;
     }
 
     public Integer getТелефон() {

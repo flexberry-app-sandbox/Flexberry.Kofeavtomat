@@ -23,8 +23,8 @@ public class Zakaz {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "Id")
-    private Integer id;
+    @Column(name = "Номер")
+    private Integer номер;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Oplata")
@@ -62,12 +62,12 @@ public class Zakaz {
         return primarykey;
     }
 
-    public Integer getId() {
-      return id;
+    public Integer getНомер() {
+      return номер;
     }
 
-    public void setId(Integer id) {
-      this.id = id;
+    public void setНомер(Integer номер) {
+      this.номер = номер;
     }
 
 

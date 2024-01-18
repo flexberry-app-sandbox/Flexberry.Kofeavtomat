@@ -27,7 +27,7 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "кофеМашина",
+      "name": "входит",
       "relatedTo": "i-i-s-kofeavtomat-кофе-машина",
       "inverse": "составЗаказа"
     }

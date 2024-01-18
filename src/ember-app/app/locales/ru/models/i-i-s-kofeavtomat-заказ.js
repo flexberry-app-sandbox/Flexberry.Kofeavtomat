@@ -1,8 +1,8 @@
 export default {
   projections: {
     ЗаказE: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       оплата: {
         __caption__: 'Оплата',
@@ -12,6 +12,9 @@ export default {
       },
       клиент: {
         __caption__: 'Клиент',
+        номер: {
+          __caption__: 'ID Клиента'
+        },
         id: {
           __caption__: 'Id'
         }
@@ -24,11 +27,14 @@ export default {
             __caption__: 'Наименование'
           }
         }
+      },
+      id: {
+        __caption__: 'Id'
       }
     },
     ЗаказL: {
-      id: {
-        __caption__: 'Id'
+      номер: {
+        __caption__: 'ID'
       },
       оплата: {
         __caption__: 'Тип оплаты',
@@ -38,15 +44,21 @@ export default {
       },
       клиент: {
         __caption__: 'Id',
+        номер: {
+          __caption__: 'ID клиента'
+        },
         id: {
           __caption__: 'Id'
         }
+      },
+      id: {
+        __caption__: 'Id'
       }
     }
   },
   validations: {
-    id: {
-      __caption__: 'Id'
+    номер: {
+      __caption__: 'ID'
     },
     клиент: {
       __caption__: 'Клиент'
@@ -56,6 +68,9 @@ export default {
     },
     состав: {
       __caption__: 'Состав'
+    },
+    id: {
+      __caption__: 'Id'
     }
   }
 };

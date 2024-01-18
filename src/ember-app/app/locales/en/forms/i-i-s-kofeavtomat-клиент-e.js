@@ -1,5 +1,6 @@
 export default {
   caption: 'Клиент',
-  'id-caption': 'Id',
-  'телефон-caption': 'Телефон'
+  'номер-caption': 'ID',
+  'телефон-caption': 'Телефон',
+  'id-caption': 'Id'
 };

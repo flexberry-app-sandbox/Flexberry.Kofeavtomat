@@ -36,14 +36,14 @@ public class SostavZakaza {
     private Zakaz zakaz;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "KofeMashina")
-    @Convert("KofeMashina")
-    @Column(name = "КофеМашина", length = 16, unique = true, nullable = false)
-    private UUID _kofemashinaid;
+    @Converter(converterClass = UUIDConverter.class, name = "Vxodit")
+    @Convert("Vxodit")
+    @Column(name = "Входит", length = 16, unique = true, nullable = false)
+    private UUID _vxoditid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "KofeMashina", insertable = false, updatable = false)
-    private KofeMashina kofemashina;
+    @JoinColumn(name = "Vxodit", insertable = false, updatable = false)
+    private KofeMashina vxodit;
 
 
     public SostavZakaza() {

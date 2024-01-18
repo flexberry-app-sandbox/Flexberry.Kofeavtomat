@@ -29,15 +29,15 @@ namespace IIS.Kofeavtomat
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("КлиентE", new string[] {
-            "id as \'Id\'",
+            "Номер as \'ID\'",
             "Телефон as \'Телефон\'"})]
     [View("КлиентL", new string[] {
-            "id as \'Id\'",
+            "Номер as \'ID\'",
             "Телефон as \'Телефон\'"})]
     public class Клиент : ICSSoft.STORMNET.DataObject
     {
         
-        private int fid;
+        private int fНомер;
         
         private int fТелефон;
         
@@ -47,33 +47,33 @@ namespace IIS.Kofeavtomat
 
         
         /// <summary>
-        /// id.
+        /// Номер.
         /// </summary>
-        // *** Start programmer edit section *** (Клиент.id CustomAttributes)
+        // *** Start programmer edit section *** (Клиент.Номер CustomAttributes)
 
-        // *** End programmer edit section *** (Клиент.id CustomAttributes)
-        public virtual int id
+        // *** End programmer edit section *** (Клиент.Номер CustomAttributes)
+        public virtual int Номер
         {
             get
             {
-                // *** Start programmer edit section *** (Клиент.id Get start)
+                // *** Start programmer edit section *** (Клиент.Номер Get start)
 
-                // *** End programmer edit section *** (Клиент.id Get start)
-                int result = this.fid;
-                // *** Start programmer edit section *** (Клиент.id Get end)
+                // *** End programmer edit section *** (Клиент.Номер Get start)
+                int result = this.fНомер;
+                // *** Start programmer edit section *** (Клиент.Номер Get end)
 
-                // *** End programmer edit section *** (Клиент.id Get end)
+                // *** End programmer edit section *** (Клиент.Номер Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Клиент.id Set start)
+                // *** Start programmer edit section *** (Клиент.Номер Set start)
 
-                // *** End programmer edit section *** (Клиент.id Set start)
-                this.fid = value;
-                // *** Start programmer edit section *** (Клиент.id Set end)
+                // *** End programmer edit section *** (Клиент.Номер Set start)
+                this.fНомер = value;
+                // *** Start programmer edit section *** (Клиент.Номер Set end)
 
-                // *** End programmer edit section *** (Клиент.id Set end)
+                // *** End programmer edit section *** (Клиент.Номер Set end)
             }
         }
         
