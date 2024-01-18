@@ -31,6 +31,7 @@ namespace IIS.Kofeavtomat
     [View("ЗданиеE", new string[] {
             "Адреса as \'Адрес\'",
             "НомерДома as \'Номер дома\'",
+            "Адрес as \'Город\'",
             "Адрес.Город as \'Город\'"}, Hidden=new string[] {
             "Адрес.Город"})]
     [View("ЗданиеL", new string[] {

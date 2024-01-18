@@ -59,16 +59,16 @@
           "lookupValueField": null,
           "relationName": "Адрес",
           "belongsTo": [],
-          "hidden": true,
+          "hidden": false,
           "attrs": [
             {
               "name": "город",
               "caption": "Город",
               "hidden": true,
-              "index": 2
+              "index": 3
             }
           ],
-          "index": -1,
+          "index": 2,
           "type": "default",
           "caption": "Город",
           "name": "адрес",

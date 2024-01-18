@@ -38,8 +38,8 @@ export let defineProjections = function (modelClass) {
     адреса: attr('Адрес', { index: 0 }),
     номерДома: attr('Номер дома', { index: 1 }),
     адрес: belongsTo('i-i-s-kofeavtomat-адрес', 'Город', {
-      город: attr('Город', { index: 2, hidden: true })
-    }, { index: -1, hidden: true })
+      город: attr('Город', { index: 3, hidden: true })
+    }, { index: 2 })
   });
 
   modelClass.defineProjection('ЗданиеL', 'i-i-s-kofeavtomat-здание', {
