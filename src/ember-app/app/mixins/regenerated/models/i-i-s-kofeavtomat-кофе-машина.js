@@ -52,7 +52,16 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('КофеМашинаE', 'i-i-s-kofeavtomat-кофе-машина', {
     номер: attr('ID', { index: 0 }),
-    состояние: attr('Состояние', { index: 1 })
+    состояние: attr('Состояние', { index: 1 }),
+    этаж: belongsTo('i-i-s-kofeavtomat-этаж', 'Этаж', {
+      этаж: attr('Этаж', { index: 3, hidden: true })
+    }, { index: 2, displayMemberPath: 'этаж' }),
+    обслуживание: belongsTo('i-i-s-kofeavtomat-обслуживание', 'Обслуживание', {
+      наименование: attr('Наименование', { index: 5, hidden: true })
+    }, { index: 4, displayMemberPath: 'наименование' }),
+    составЗаказа: hasMany('i-i-s-kofeavtomat-состав-заказа', 'Состав заказа', {
+      сумма: attr('Сумма', { index: 0 })
+    })
   });
 
   modelClass.defineProjection('КофеМашинаL', 'i-i-s-kofeavtomat-кофе-машина', {

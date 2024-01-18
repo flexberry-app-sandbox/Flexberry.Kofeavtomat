@@ -44,4 +44,54 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "состояние" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-кофе-машина-e.этаж-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.этаж
+      displayAttributeName="этаж"
+      autocomplete=true
+      relationName="этаж"
+      projection="ЭтажL"
+      title=(t "forms.i-i-s-kofeavtomat-кофе-машина-e.этаж-caption")
+      readonly=readonly
+      componentName="этажLookup"
+      class=(if (v-get validationModel "этаж" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-кофе-машина-e-этаж=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "этаж" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-кофе-машина-e.обслуживание-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.обслуживание
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="обслуживание"
+      projection="ОбслуживаниеL"
+      title=(t "forms.i-i-s-kofeavtomat-кофе-машина-e.обслуживание-caption")
+      readonly=readonly
+      componentName="обслуживаниеLookup"
+      class=(if (v-get validationModel "обслуживание" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-кофе-машина-e-обслуживание=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "обслуживание" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-кофе-машина-e.составЗаказа-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="составЗаказаGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.составЗаказа
+      content=model.составЗаказа
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "составЗаказа" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-кофе-машина-e-составЗаказа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "составЗаказа" "message")}}
+  </div>
 </form>
