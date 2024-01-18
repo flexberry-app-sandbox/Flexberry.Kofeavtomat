@@ -1,0 +1,55 @@
+﻿{
+  "name": "IISKofeavtomatСоставЗаказа",
+  "modelName": "i-i-s-kofeavtomat-состав-заказа",
+  "className": "СоставЗаказа",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-kofeavtomat-заказ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кофеМашина",
+      "relatedTo": "i-i-s-kofeavtomat-кофе-машина",
+      "inverse": "составЗаказа"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СоставЗаказаE",
+      "modelName": "i-i-s-kofeavtomat-состав-заказа",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-здание-e",
+  "editForm": "i-i-s-kofeavtomat-здание-e",
+  "external": false,
+  "caption": "Здание",
+  "name": "IISKofeavtomatЗданиеL",
+  "className": "ЗданиеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-здание",
+      "modelProjection": "ЗданиеL"
+    }
+  ]
+}

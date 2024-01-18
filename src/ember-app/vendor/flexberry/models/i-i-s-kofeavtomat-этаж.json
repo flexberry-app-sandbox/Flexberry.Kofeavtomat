@@ -1,0 +1,118 @@
+﻿{
+  "name": "IISKofeavtomatЭтаж",
+  "modelName": "i-i-s-kofeavtomat-этаж",
+  "className": "Этаж",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "этаж",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "здание",
+      "relatedTo": "i-i-s-kofeavtomat-здание",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЭтажE",
+      "modelName": "i-i-s-kofeavtomat-этаж",
+      "attrs": [
+        {
+          "name": "этаж",
+          "caption": "Этаж",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адреса",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 2
+            },
+            {
+              "name": "номерДома",
+              "caption": "Номер дома",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Здание",
+          "name": "здание",
+          "relatedTo": "i-i-s-kofeavtomat-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЭтажL",
+      "modelName": "i-i-s-kofeavtomat-этаж",
+      "attrs": [
+        {
+          "name": "этаж",
+          "caption": "Этаж",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адреса",
+              "caption": "Адреса",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "номерДома",
+              "caption": "Номер дома",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адреса",
+          "name": "здание",
+          "relatedTo": "i-i-s-kofeavtomat-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Здание",
+      "projection": "ЗданиеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Этаж",
+  "name": "IISKofeavtomatЭтажE",
+  "className": "ЭтажE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-этаж",
+      "modelProjection": "ЭтажE"
+    }
+  ]
+}

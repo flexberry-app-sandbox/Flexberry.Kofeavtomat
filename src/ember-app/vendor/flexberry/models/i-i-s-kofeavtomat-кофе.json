@@ -1,0 +1,113 @@
+﻿{
+  "name": "IISKofeavtomatКофе",
+  "modelName": "i-i-s-kofeavtomat-кофе",
+  "className": "Кофе",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "материалы",
+      "relatedTo": "i-i-s-kofeavtomat-материалы",
+      "inverse": "кофе"
+    },
+    {
+      "name": "допы",
+      "relatedTo": "i-i-s-kofeavtomat-допы",
+      "inverse": "кофе"
+    },
+    {
+      "name": "стаканчик",
+      "relatedTo": "i-i-s-kofeavtomat-стаканчик",
+      "inverse": "кофе"
+    }
+  ],
+  "projections": [
+    {
+      "name": "КофеE",
+      "modelName": "i-i-s-kofeavtomat-кофе",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "МатериалыE",
+          "caption": "Материалы",
+          "name": "материалы",
+          "relatedTo": "i-i-s-kofeavtomat-материалы",
+          "inverse": null
+        },
+        {
+          "projectionName": "ДопыE",
+          "caption": "Допы",
+          "name": "допы",
+          "relatedTo": "i-i-s-kofeavtomat-допы",
+          "inverse": null
+        },
+        {
+          "projectionName": "СтаканчикE",
+          "caption": "Стаканчик",
+          "name": "стаканчик",
+          "relatedTo": "i-i-s-kofeavtomat-стаканчик",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "КофеL",
+      "modelName": "i-i-s-kofeavtomat-кофе",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

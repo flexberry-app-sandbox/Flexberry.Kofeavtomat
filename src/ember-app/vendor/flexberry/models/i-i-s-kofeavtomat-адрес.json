@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISKofeavtomatАдрес",
+  "modelName": "i-i-s-kofeavtomat-адрес",
+  "className": "Адрес",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "город",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АдресE",
+      "modelName": "i-i-s-kofeavtomat-адрес",
+      "attrs": [
+        {
+          "name": "город",
+          "caption": "Город",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "АдресL",
+      "modelName": "i-i-s-kofeavtomat-адрес",
+      "attrs": [
+        {
+          "name": "город",
+          "caption": "Город",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

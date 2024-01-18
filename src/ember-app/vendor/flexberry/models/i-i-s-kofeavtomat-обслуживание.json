@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISKofeavtomatОбслуживание",
+  "modelName": "i-i-s-kofeavtomat-обслуживание",
+  "className": "Обслуживание",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "этаж",
+      "relatedTo": "i-i-s-kofeavtomat-этаж",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОбслуживаниеE",
+      "modelName": "i-i-s-kofeavtomat-обслуживание",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Этаж",
+          "lookupValueField": "этаж",
+          "relationName": "Этаж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "этаж",
+              "caption": "Этаж",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Этаж",
+          "name": "этаж",
+          "relatedTo": "i-i-s-kofeavtomat-этаж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОбслуживаниеL",
+      "modelName": "i-i-s-kofeavtomat-обслуживание",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Этаж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "этаж",
+              "caption": "Этаж",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Этаж",
+          "name": "этаж",
+          "relatedTo": "i-i-s-kofeavtomat-этаж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

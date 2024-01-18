@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Этаж",
+      "projection": "ЭтажL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Обслуживание",
+      "projection": "ОбслуживаниеL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СоставЗаказа.Заказ",
+      "projection": "ЗаказL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Кофе машина",
+  "name": "IISKofeavtomatКофеМашинаE",
+  "className": "КофеМашинаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-кофе-машина",
+      "modelProjection": "КофеМашинаE"
+    }
+  ]
+}

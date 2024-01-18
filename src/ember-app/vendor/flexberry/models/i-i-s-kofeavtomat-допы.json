@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISKofeavtomatДопы",
+  "modelName": "i-i-s-kofeavtomat-допы",
+  "className": "Допы",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "объем",
+      "type": "i-i-s-kofeavtomat-объемы",
+      "flexberryType": "Объемы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кофе",
+      "relatedTo": "i-i-s-kofeavtomat-кофе",
+      "inverse": "допы"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДопыE",
+      "modelName": "i-i-s-kofeavtomat-допы",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

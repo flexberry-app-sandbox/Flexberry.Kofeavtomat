@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Кофе",
+  "name": "IISKofeavtomatКофеE",
+  "className": "КофеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-кофе",
+      "modelProjection": "КофеE"
+    }
+  ]
+}

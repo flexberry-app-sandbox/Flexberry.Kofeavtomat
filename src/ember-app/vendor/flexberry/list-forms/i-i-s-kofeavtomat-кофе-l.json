@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-кофе-e",
+  "editForm": "i-i-s-kofeavtomat-кофе-e",
+  "external": false,
+  "caption": "Кофе",
+  "name": "IISKofeavtomatКофеL",
+  "className": "КофеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-кофе",
+      "modelProjection": "КофеL"
+    }
+  ]
+}

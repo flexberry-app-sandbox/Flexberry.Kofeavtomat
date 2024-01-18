@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-заказ-e",
+  "editForm": "i-i-s-kofeavtomat-заказ-e",
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISKofeavtomatЗаказL",
+  "className": "ЗаказL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-заказ",
+      "modelProjection": "ЗаказL"
+    }
+  ]
+}

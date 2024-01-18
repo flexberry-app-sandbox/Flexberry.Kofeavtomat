@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Адрес",
+  "name": "IISKofeavtomatАдресE",
+  "className": "АдресE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-адрес",
+      "modelProjection": "АдресE"
+    }
+  ]
+}

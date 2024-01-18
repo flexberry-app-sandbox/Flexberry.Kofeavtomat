@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-клиент-e",
+  "editForm": "i-i-s-kofeavtomat-клиент-e",
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISKofeavtomatКлиентL",
+  "className": "КлиентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-клиент",
+      "modelProjection": "КлиентL"
+    }
+  ]
+}

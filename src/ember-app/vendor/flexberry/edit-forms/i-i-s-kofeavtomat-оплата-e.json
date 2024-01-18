@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Оплата",
+  "name": "IISKofeavtomatОплатаE",
+  "className": "ОплатаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-оплата",
+      "modelProjection": "ОплатаE"
+    }
+  ]
+}

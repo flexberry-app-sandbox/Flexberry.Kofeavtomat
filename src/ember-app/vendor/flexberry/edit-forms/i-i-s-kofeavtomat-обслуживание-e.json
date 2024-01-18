@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Этаж",
+      "projection": "ЭтажL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Обслуживание",
+  "name": "IISKofeavtomatОбслуживаниеE",
+  "className": "ОбслуживаниеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-обслуживание",
+      "modelProjection": "ОбслуживаниеE"
+    }
+  ]
+}

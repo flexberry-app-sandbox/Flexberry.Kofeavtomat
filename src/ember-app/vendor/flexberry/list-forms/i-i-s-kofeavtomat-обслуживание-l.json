@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-обслуживание-e",
+  "editForm": "i-i-s-kofeavtomat-обслуживание-e",
+  "external": false,
+  "caption": "Обслуживание",
+  "name": "IISKofeavtomatОбслуживаниеL",
+  "className": "ОбслуживаниеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-обслуживание",
+      "modelProjection": "ОбслуживаниеL"
+    }
+  ]
+}

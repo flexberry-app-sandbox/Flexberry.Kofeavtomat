@@ -1,0 +1,87 @@
+<h3 class="ui header">{{t "forms.i-i-s-kofeavtomat-заказ-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.id
+      class=(if (v-get validationModel "id" "isInvalid") "error")
+      label=(t "forms.i-i-s-kofeavtomat-заказ-e.id-caption")
+      data-test-i-i-s-kofeavtomat-заказ-e-id=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "id" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-заказ-e.оплата-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.оплата
+      displayAttributeName="типОплаты"
+      autocomplete=true
+      relationName="оплата"
+      projection="ОплатаL"
+      title=(t "forms.i-i-s-kofeavtomat-заказ-e.оплата-caption")
+      readonly=readonly
+      componentName="оплатаLookup"
+      class=(if (v-get validationModel "оплата" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-заказ-e-оплата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "оплата" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-заказ-e.клиент-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиент
+      displayAttributeName="id"
+      autocomplete=true
+      relationName="клиент"
+      projection="КлиентL"
+      title=(t "forms.i-i-s-kofeavtomat-заказ-e.клиент-caption")
+      readonly=readonly
+      componentName="клиентLookup"
+      class=(if (v-get validationModel "клиент" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-заказ-e-клиент=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиент" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kofeavtomat-заказ-e.состав-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="составGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.состав
+      content=model.состав
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "состав" "isInvalid") "error")
+      data-test-i-i-s-kofeavtomat-заказ-e-состав=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "состав" "message")}}
+  </div>
+</form>

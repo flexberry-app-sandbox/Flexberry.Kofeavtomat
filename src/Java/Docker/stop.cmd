@@ -1,0 +1,1 @@
+docker-compose -p kofeavtomat-java down

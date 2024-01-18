@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Kofeavtomat",
+  "applicationTitle": "Kofeavtomat",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kofeavtomat",
+      "caption": "Kofeavtomat",
+      "title": "Kofeavtomat",
+      "children": [
+        {
+          "link": "i-i-s-kofeavtomat-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-обслуживание-l",
+          "menuName": null,
+          "caption": "Обслуживание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-адрес-l",
+          "menuName": null,
+          "caption": "Адрес",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-кофе-l",
+          "menuName": null,
+          "caption": "Кофе",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-этаж-l",
+          "menuName": null,
+          "caption": "Этаж",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-кофе-машина-l",
+          "menuName": null,
+          "caption": "Кофе машина",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-оплата-l",
+          "menuName": null,
+          "caption": "Оплата",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kofeavtomat-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

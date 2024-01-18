@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISKofeavtomatСтаканчик",
+  "modelName": "i-i-s-kofeavtomat-стаканчик",
+  "className": "Стаканчик",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "объем",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кофе",
+      "relatedTo": "i-i-s-kofeavtomat-кофе",
+      "inverse": "стаканчик"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СтаканчикE",
+      "modelName": "i-i-s-kofeavtomat-стаканчик",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISKofeavtomatЗаказ",
+  "modelName": "i-i-s-kofeavtomat-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-kofeavtomat-клиент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-kofeavtomat-оплата",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "состав",
+      "relatedTo": "i-i-s-kofeavtomat-состав",
+      "inverse": "заказ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-kofeavtomat-заказ",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ТипОплаты",
+          "lookupValueField": "типОплаты",
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типОплаты",
+              "caption": "Тип оплаты",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Оплата",
+          "name": "оплата",
+          "relatedTo": "i-i-s-kofeavtomat-оплата",
+          "inverse": null
+        },
+        {
+          "lookupValue": "id",
+          "lookupValueField": "id",
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Клиент",
+          "name": "клиент",
+          "relatedTo": "i-i-s-kofeavtomat-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СоставE",
+          "caption": "Состав",
+          "name": "состав",
+          "relatedTo": "i-i-s-kofeavtomat-состав",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-kofeavtomat-заказ",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типОплаты",
+              "caption": "Тип оплаты",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип оплаты",
+          "name": "оплата",
+          "relatedTo": "i-i-s-kofeavtomat-оплата",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Id",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Id",
+          "name": "клиент",
+          "relatedTo": "i-i-s-kofeavtomat-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

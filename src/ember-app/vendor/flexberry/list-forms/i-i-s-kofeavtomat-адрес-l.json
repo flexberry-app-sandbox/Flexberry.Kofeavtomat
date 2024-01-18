@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-адрес-e",
+  "editForm": "i-i-s-kofeavtomat-адрес-e",
+  "external": false,
+  "caption": "Адрес",
+  "name": "IISKofeavtomatАдресL",
+  "className": "АдресL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-адрес",
+      "modelProjection": "АдресL"
+    }
+  ]
+}

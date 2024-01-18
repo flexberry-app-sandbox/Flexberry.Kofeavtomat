@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Оплата",
+      "projection": "ОплатаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    },
+    {
+      "master": "кофе",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Состав.Кофе",
+      "projection": "КофеL",
+      "detailModelName": "i-i-s-kofeavtomat-состав"
+    }
+  ],
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISKofeavtomatЗаказE",
+  "className": "ЗаказE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-заказ",
+      "modelProjection": "ЗаказE"
+    }
+  ]
+}

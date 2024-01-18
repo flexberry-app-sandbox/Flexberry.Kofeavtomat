@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Kofeavtomat",
+  "className": "Состояния",
+  "enumObjects": {
+    "Исправен": "Исправен",
+    "Неисправен": "Неисправен"
+  }
+}

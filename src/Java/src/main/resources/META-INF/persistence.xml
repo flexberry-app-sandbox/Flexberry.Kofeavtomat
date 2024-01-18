@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Kofeavtomat.model.Zakaz</class>
+        <class>Kofeavtomat.model.Klient</class>
+        <class>Kofeavtomat.model.Obsluzhivanie</class>
+        <class>Kofeavtomat.model.Adres</class>
+        <class>Kofeavtomat.model.Sostav</class>
+        <class>Kofeavtomat.model.Materialy</class>
+        <class>Kofeavtomat.model.Kofe</class>
+        <class>Kofeavtomat.model.Stakanchik</class>
+        <class>Kofeavtomat.model.Etazh</class>
+        <class>Kofeavtomat.model.KofeMashina</class>
+        <class>Kofeavtomat.model.Oplata</class>
+        <class>Kofeavtomat.model.Zdanie</class>
+        <class>Kofeavtomat.model.Dopy</class>
+        <class>Kofeavtomat.model.SostavZakaza</class>
+        <class>Kofeavtomat.model.FlexberryAdvLimit</class>
+        <class>Kofeavtomat.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Kofeavtomat.model.NewPlatformFlexberryServicesLock</class>
+        <class>Kofeavtomat.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

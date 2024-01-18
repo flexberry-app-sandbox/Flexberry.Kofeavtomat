@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISKofeavtomatСостав",
+  "modelName": "i-i-s-kofeavtomat-состав",
+  "className": "Состав",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кофе",
+      "relatedTo": "i-i-s-kofeavtomat-кофе",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-kofeavtomat-заказ",
+      "inverse": "состав"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СоставE",
+      "modelName": "i-i-s-kofeavtomat-состав",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Кофе",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Кофе",
+          "name": "кофе",
+          "relatedTo": "i-i-s-kofeavtomat-кофе",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

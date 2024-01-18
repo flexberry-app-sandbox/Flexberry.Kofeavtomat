@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISKofeavtomatМатериалы",
+  "modelName": "i-i-s-kofeavtomat-материалы",
+  "className": "Материалы",
+  "nameSpace": "IIS.Kofeavtomat",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кофе",
+      "relatedTo": "i-i-s-kofeavtomat-кофе",
+      "inverse": "материалы"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МатериалыE",
+      "modelName": "i-i-s-kofeavtomat-материалы",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

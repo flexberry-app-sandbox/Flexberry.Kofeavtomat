@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Kofeavtomat",
+  "className": "Объемы",
+  "enumObjects": {
+    "Гр": "Гр",
+    "Кг": "Кг",
+    "Л": "Л",
+    "Мл": "Мл"
+  }
+}

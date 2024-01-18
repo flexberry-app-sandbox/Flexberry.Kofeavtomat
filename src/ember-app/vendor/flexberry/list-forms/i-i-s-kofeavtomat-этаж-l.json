@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kofeavtomat-этаж-e",
+  "editForm": "i-i-s-kofeavtomat-этаж-e",
+  "external": false,
+  "caption": "Этаж",
+  "name": "IISKofeavtomatЭтажL",
+  "className": "ЭтажL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kofeavtomat-этаж",
+      "modelProjection": "ЭтажL"
+    }
+  ]
+}
