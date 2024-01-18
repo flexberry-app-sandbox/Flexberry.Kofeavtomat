@@ -39,15 +39,85 @@
     {
       "name": "ЗданиеE",
       "modelName": "i-i-s-kofeavtomat-здание",
-      "attrs": [],
-      "belongsTo": [],
+      "attrs": [
+        {
+          "name": "адреса",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДома",
+          "caption": "Номер дома",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Адрес",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "город",
+              "caption": "Город",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Город",
+          "name": "адрес",
+          "relatedTo": "i-i-s-kofeavtomat-адрес",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
       "name": "ЗданиеL",
       "modelName": "i-i-s-kofeavtomat-здание",
-      "attrs": [],
-      "belongsTo": [],
+      "attrs": [
+        {
+          "name": "адреса",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДома",
+          "caption": "Номер дома",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Адрес",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "город",
+              "caption": "Город",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Город",
+          "name": "адрес",
+          "relatedTo": "i-i-s-kofeavtomat-адрес",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

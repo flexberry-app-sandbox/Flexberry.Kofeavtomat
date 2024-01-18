@@ -35,10 +35,18 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ЗданиеE', 'i-i-s-kofeavtomat-здание', {
-    
+    адреса: attr('Адрес', { index: 0 }),
+    номерДома: attr('Номер дома', { index: 1 }),
+    адрес: belongsTo('i-i-s-kofeavtomat-адрес', 'Город', {
+      город: attr('Город', { index: 2, hidden: true })
+    }, { index: -1, hidden: true })
   });
 
   modelClass.defineProjection('ЗданиеL', 'i-i-s-kofeavtomat-здание', {
-    
+    адреса: attr('Адрес', { index: 0 }),
+    номерДома: attr('Номер дома', { index: 1 }),
+    адрес: belongsTo('i-i-s-kofeavtomat-адрес', 'Город', {
+      город: attr('Город', { index: 2 })
+    }, { index: -1, hidden: true })
   });
 };

@@ -29,14 +29,12 @@ namespace IIS.Kofeavtomat
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ЗданиеE", new string[] {
-            "Адрес as \'Адрес\'",
+            "Адреса as \'Адрес\'",
             "НомерДома as \'Номер дома\'",
-            "Адрес as \'Адрес\'",
             "Адрес.Город as \'Город\'"}, Hidden=new string[] {
             "Адрес.Город"})]
-    [MasterViewDefineAttribute("ЗданиеE", "Адрес", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Город")]
     [View("ЗданиеL", new string[] {
-            "Адрес as \'Адрес\'",
+            "Адреса as \'Адрес\'",
             "НомерДома as \'Номер дома\'",
             "Адрес.Город as \'Город\'"})]
     public class Здание : ICSSoft.STORMNET.DataObject
